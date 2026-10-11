@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Dental Equipment | Your Company Name</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <canvas id="hero-canvas" data-bg="./images/MD.png"></canvas>
+
+
+
+  <style>html{scroll-behavior:smooth}</style>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <!-- الشعار -->
+    <a href="#hero" class="logo">
+      <img src="images/MD.png" alt="Company Logo"/>
+      <span>MEDI DENT</span>
+    </a>
+
+    <!-- البحث + أيقونة السلة -->
+    <div class="search-cart-wrapper">
+      <div class="search-container">
+        <form id="searchForm">
+          <input type="text" id="searchInput" placeholder="Search products..."/>
+          <button type="submit" id="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- أيقونة السلة -->
+      <button id="cart-button" class="cart-icon" type="button" aria-label="Cart">
+        <img src="images/iconscart.png" alt="Cart"/>
+        <span id="cart-count">0</span>
+      </button>
+    </div>
+
+    <!-- القوائم -->
+    <ul>
+      <li><a href="#hero">Home Page</a></li>
+      <li class="dropdown">
+<li class="dropdown">
+  <a href="#!" aria-expanded="false">Products ▾</a>
+  <ul class="dropdown-menu">
+    <li><a href="#section-1">Dental Clinics</a></li>
+    <li><a href="#section-2">Dental Labs</a></li>
+    <li><a href="#section-3">Medical Supplies</a></li>
+    <!-- <li><a href="#section-4">Medical Devices</a></li> -->
+    <li><a href="#section-5">Dental Devices</a></li>
+  </ul>
+</li>
+     <li><a href="#about">About Us</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-top"><h1>MEDI DENT</h1></div>
+    <div class="hero-bottom">
+    <p>Providing high-quality dental and medical products for clinics, medical centers, and laboratories</p>
+      <a href="#products" class="cta-button">Browse Our Products Now</a>
+    </div>
+  </section>
+
+
+  <section id="products" class="container">
+    <h2>Our Featured Products</h2>
+    <p class="section-subtitle">Choose from a wide range of high-quality equipment.</p>
+
+
+
+<!-- ---------- section1 ---------- -->
+<h3 id="section-1" class="active">Dental Clinics</h3>
+<div class="products-grid">
+  <div class="product-card on-sale">
+    <span class="discount-badge">SALE -25%</span>
+    <img src="images/Dental apron ( dental bib ) .png" alt="Dental Clinics"/>
+    <h4>Dental apron ( dental bib )</h4>
+    <p>33*45cm, paper*2 + PE film*1, blue, green, pink, yellow, orange, purple, white</p>
+    <div class="rating-price">
+        
+
+      <div class="price price-block">
+        <span class="old-price">₪50</span>
+        <span class="new-price">₪123</span>
+      </div>
+
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    
+  </div>
+
+
+      <div class="product-card">
+        <span class="discount-badge">SALE -20%</span>
+        <img src="images/seliva ejector.png" alt="Saliva Ejector"/>
+        <h4>Saliva Ejector</h4>
+        <p>Saliva Ejector, 145*6.5mm, PVC, clear tube + blue tip Removable / Immovable tip</p>
+        <div class="rating-price">
+          <div class="price price-block">
+            <span class="old-price">₪90</span>
+            <span class="new-price">₪159</span>
+          </div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+          <span class="discount-badge">SALE -20%</span>
+        <img src="images/Dental bib clip.png" alt="Dental bib clip"/>
+        <h4>Dental bib clip</h4>
+        <p>Dental bib clip 40cm, silicone strip + metal clip + casing</p>
+        <div class="rating-price">
+          <div class="price price-block">
+            <span class="old-price">₪7</span>
+            <span class="new-price">₪159</span>
+          </div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+           <!-- <span class="discount-badge">SALE -20%</span> -->
+        <img src="images/Dental bib with tie.png" alt="Dental Bibs with Tie"/>
+        <h4>Dental Bibs with Tie</h4>
+        <p>Dental bib with tie 43cm*35cm,2ply paper+1ply PE film</p>
+                <div class="rating-price">
+          <div class="price price-block">
+            <span class="old-price">₪90</span>
+            <!-- <span class="new-price">₪159</span> -->
+          </div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+    <!-- <span class="discount-badge">SALE -25%</span> -->
+        <img src="images/Cotton roll.png" alt="Cotton roll"/>
+        <h4>Cotton roll</h4>
+        <p>Cotton roll,10*38mm</p>
+        <div class="rating-price">
+                 <div class="price price-block">
+            <span class="old-price">₪12</span>
+            <!-- <span class="new-price">₪159</span> -->
+          </div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+            <!-- <span class="discount-badge">SALE -25%</span> -->
+        <img src="images/Gauze.png" alt="Gauze"/>
+        <h4>Gauze</h4>
+        <p>Gauze 5cm*5cm,4ply,non-sterile</p>
+        <div class="rating-price">
+          <div class="price">₪70</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Protective glasses.png" alt="Protective glasses"/>
+        <h4>Protective glasses</h4>
+        <p>Glasses to protect eyes during dental procedures.</p>
+        <div class="rating-price">
+          <div class="price">₪5</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Bed sheet.png" alt="Bed sheet"/>
+        <h4>Bed sheet</h4>
+        <p>80*180cm/sheet white/blue/pink,30gms</p>
+        <div class="rating-price">
+          <div class="price">₪40</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Dental needle.png" alt="Dental needle"/>
+        <h4>Dental needle</h4>
+        <p>30G (38mm, 32mm, 25mm, 21mm)</p>
+        <div class="rating-price">
+          <div class="price">₪17</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Dental irrigating needle.png" alt="Dental irrigating needle"/>
+        <h4>Dental irrigating needle</h4>
+        <p>Single hole</p>
+        <div class="rating-price">
+          <div class="price">₪45</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="/Users/reem/Desktop/Marketing/images/Disposable syringe.png" alt="Disposable syringe"/>
+        <h4>Disposable syringe</h4>
+        <p>3ml green 21G</p>
+        <div class="rating-price">
+          <div class="price">₪40</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/k-Files .png" alt="k-Files"/>
+        <h4>k-Files</h4>
+        <p>25mm (#30,#8,#10,#15,#20,#25) — 31mm (#15,#20,#25)</p>
+        <div class="rating-price">
+          <div class="price">₪10</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/H-files.png" alt="H-files"/>
+        <h4>H-files</h4>
+        <p>25mm (#15, #20, #25)</p>
+        <div class="rating-price">
+          <div class="price">₪10</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/z-k3 .png" alt="z-k3"/>
+        <h4>z-k3</h4>
+        <p>Mixed 25mm, K1 25mm, K2 25mm, mixed 31mm</p>
+        <div class="rating-price">
+          <div class="price">₪40</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Gutta percha (GP).png" alt="Gutta percha (GP)"/>
+        <h4>Gutta percha (GP)</h4>
+        <p>GP 06/25 , GP 06/20 , GP 06/30</p>
+        <div class="rating-price">
+          <div class="price">₪15</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Matrix band.png" alt="Matrix band"/>
+        <h4>Matrix band</h4>
+        <p>1.041 — 1.330</p>
+        <div class="rating-price">
+          <div class="price">₪40</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Diamond burs.png" alt="Diamond burs"/>
+        <h4>Diamond burs</h4>
+        <p>TF12, TF13, TF14, TR13, TR12, FO27, SO21, SO20, EX12, BR31, BR40, SI48, TR62C, TR13C, TF13C</p>
+        <div class="rating-price">
+          <div class="price">₪10</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Carbide burs.png" alt="Carbide burs"/>
+        <h4>Carbide burs</h4>
+        <p>RA 04, FG 7902, RA 38, FG 07L, FG 557, RA C21-012, FG 05, FG 0l gingival, crown slitter short/long</p>
+        <div class="rating-price">
+          <div class="price">₪15</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Paper points (PP).png" alt="Paper points (PP)"/>
+        <h4>Paper points (PP)</h4>
+        <p>PP 06/25 , PP 06/20 , PP 06/30</p>
+        <div class="rating-price">
+          <div class="price">₪15</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Fiber post bioceramic.png" alt="Fiber post bioceramic"/>
+        <h4>Fiber post bioceramic</h4>
+        <p>Bioceramic fiber post used in dental restorations.</p>
+        <div class="rating-price">
+          <div class="price">₪25</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Fiber strip.png" alt="Fiber strip"/>
+        <h4>Fiber strip</h4>
+        <p>Flexible strip used for dental procedures.</p>
+        <div class="rating-price">
+          <div class="price">₪50</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Wooden wedge - 1.080.png" alt="Wooden wedge"/>
+        <h4>Wooden wedge - 1.080</h4>
+        <p>Wooden wedge for separating teeth in procedures.</p>
+        <div class="rating-price">
+          <div class="price">₪15</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Screw post titanium.png" alt="Screw post titanium"/>
+        <h4>Screw post titanium</h4>
+        <p>Titanium post for dental restorations.</p>
+        <div class="rating-price">
+          <div class="price">₪70</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Screw post gold plated.png" alt="Screw post gold plated"/>
+        <h4>Screw post gold plated</h4>
+        <p>Gold-plated post for dental restorations.</p>
+        <div class="rating-price">
+          <div class="price">₪50</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Gutter cutter.png" alt="Gutter cutter"/>
+        <h4>Gutter cutter</h4>
+        <p>Tool for cutting dental gutters.</p>
+        <div class="rating-price">
+          <div class="price">₪100</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Ligature ring.png" alt="Ligature ring"/>
+        <h4>Ligature ring</h4>
+        <p>Ring used to secure orthodontic ligatures.</p>
+        <div class="rating-price">
+          <div class="price">₪15</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Welding rod.png" alt="Welding rod"/>
+        <h4>Welding rod</h4>
+        <p>Rod for dental welding applications.</p>
+        <div class="rating-price">
+          <div class="price">₪7</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Rubber dam kit.png" alt="Rubber dam kit"/>
+        <h4>Rubber dam kit</h4>
+        <p>Kit to isolate teeth during treatment.</p>
+        <div class="rating-price">
+          <div class="price">₪120</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Rubber dam sheets.png" alt="Rubber dam sheets"/>
+        <h4>Rubber dam sheets</h4>
+        <p>Sheets used with rubber dam kit for isolation.</p>
+        <div class="rating-price">
+          <div class="price">₪50</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/3M bond.png" alt="3M bond"/>
+        <h4>3M bond</h4>
+        <p>Adhesive bonding agent for dental procedures.</p>
+        <div class="rating-price">
+          <div class="price">₪120</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Fuji I cement.png" alt="Fuji I cement"/>
+        <h4>Fuji I cement</h4>
+        <p>Dental cement for restorative purposes.</p>
+        <div class="rating-price">
+          <div class="price">₪180</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/ Polishing discs.png" alt="Polishing discs"/>
+        <h4>Polishing discs</h4>
+        <p>1.071 color 14mm</p>
+        <div class="rating-price">
+          <div class="price">₪25</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/ Fog Free Photo.png" alt="Fog Free Photo"/>
+        <h4>Fog Free Photo</h4>
+        <p>Device or spray to prevent fog on dental mirrors.</p>
+        <div class="rating-price">
+          <div class="price">₪250</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/ Cheek retractor - M, L.png" alt="Cheek retractor"/>
+        <h4>Cheek retractor - M, L</h4>
+        <p>Retractors to hold cheeks away during treatment.</p>
+        <div class="rating-price">
+          <div class="price">₪10</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/ Ortho wax.png" alt="Ortho wax"/>
+        <h4>Ortho wax</h4>
+        <p>Wax for orthodontic appliances to prevent irritation.</p>
+        <div class="rating-price">
+          <div class="price">₪3</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/ Root canal measure.png" alt="Root canal measure"/>
+        <h4>Root canal measure</h4>
+        <p>Tool to measure root canal length accurately.</p>
+        <div class="rating-price">
+          <div class="price">₪10</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Tooth shape mirror.png" alt="Tooth shape mirror"/>
+        <h4>Tooth shape mirror</h4>
+        <p>description</p>
+        <div class="rating-price">
+          <div class="price">₪10</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/ Mirror probe, tweezer kit.png" alt="Mirror probe, tweezer kit"/>
+        <h4>Mirror probe, tweezer kit</h4>
+        <p>Kit with mirror, probe, and tweezers for examination.</p>
+        <div class="rating-price">
+          <div class="price">₪15</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/ Hand piece.png" alt="Hand piece"/>
+        <h4>Hand piece</h4>
+        <p>Dental handpiece used for drilling and polishing.</p>
+        <div class="rating-price">
+          <div class="price">₪100</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/ Light cure.png" alt="Light cure"/>
+        <h4>Light cure</h4>
+        <p>Device to cure light-sensitive dental materials.</p>
+        <div class="rating-price">
+          <div class="price">₪200</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/ Triple syringe.png" alt="Triple syringe"/>
+        <h4>Triple syringe</h4>
+        <p>Syringe with air, water, and spray functions.</p>
+        <div class="rating-price">
+          <div class="price">₪70</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Implant contra .png" alt="Implant contra"/>
+        <h4>Implant contra</h4>
+        <p>Instrument to count dental implants during procedures.</p>
+        <div class="rating-price">
+          <div class="price">₪600</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- <div class="product-card">
+        <img src="images/ Nano Needles.png" alt="Nano Needles"/>
+        <h4>Nano Needles</h4>
+        <p>Ultra-fine needles for precise dental injections.</p>
+        <div class="rating-price">
+          <div class="price">₪0</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div> -->
+
+      <div class="product-card">
+        <img src="images/Mesh base mini roth brackets.png" alt="Mesh base mini roth brackets"/>
+        <h4>Mesh base mini roth brackets</h4>
+        <p>MROTH-22M</p>
+        <div class="rating-price">
+          <div class="price">₪15</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Niti arch wires.png" alt="Niti arch wires"/>
+        <h4>Niti arch wires</h4>
+        <p>N10-139AU, N10-149CU</p>
+        <div class="rating-price">
+          <div class="price">₪15</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Power chain.png" alt="Power chain"/>
+        <h4>Power chain</h4>
+        <p>E12-241ED</p>
+        <div class="rating-price">
+          <div class="price">₪20</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Twisted wire .png" alt="Twisted wire"/>
+        <h4>Twisted wire</h4>
+        <p>TSW</p>
+        <div class="rating-price">
+          <div class="price">₪90</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Arch wire sleeve .png" alt="Arch wire sleeve"/>
+        <h4>Arch wire sleeve</h4>
+        <p>E12-249EC</p>
+        <div class="rating-price">
+          <div class="price">₪30</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Bondable lingual button.png" alt="Bondable lingual button"/>
+        <h4>Bondable lingual button</h4>
+        <p>A14-86AB</p>
+        <div class="rating-price">
+          <div class="price">₪10</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Bondable lingual cleats.png" alt="Bondable lingual cleats"/>
+        <h4>Bondable lingual cleats</h4>
+        <p>A13-89AC</p>
+        <div class="rating-price">
+          <div class="price">₪10</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Crimpable hook short.png" alt="Crimpable hook short"/>
+        <h4>Crimpable hook short</h4>
+        <p>A11-78AA</p>
+        <div class="rating-price">
+          <div class="price">₪12</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Crimpable hook long.png" alt="Crimpable hook long"/>
+        <h4>Crimpable hook long</h4>
+        <p>A13-80AA</p>
+        <div class="rating-price">
+          <div class="price">₪12</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Traction hook.png" alt="Traction hook"/>
+        <h4>Traction hook</h4>
+        <p>111-138AN</p>
+        <div class="rating-price">
+          <div class="price">₪10</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/TLingual sheath.png" alt="Lingual sheath"/>
+        <h4>Lingual sheath</h4>
+        <p>A12-95AE</p>
+        <div class="rating-price">
+          <div class="price">₪12</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Stainless steel expansion screw.png" alt="Stainless steel expansion screw"/>
+        <h4>Stainless steel expansion screw</h4>
+        <p>SEH-18, SEH-19</p>
+        <div class="rating-price">
+          <div class="price">₪30</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Face masks.png" alt="Face masks"/>
+        <h4>Face masks</h4>
+        <p>Partly adjustable (A11-103AI), single bar (A11-104AI), adjustable (A11-102AI)</p>
+        <div class="rating-price">
+          <div class="price">₪5</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/1st space maintainer.png" alt="1st space maintainer"/>
+        <h4>1st space maintainer</h4>
+        <p>description</p>
+        <div class="rating-price">
+          <div class="price">₪200</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/5_premolar_rough_band.png.png" alt="5# premolar rough band"/>
+        <h4>5# premolar rough band</h4>
+        <p>11-76AB + A2, preweld mini roth 022 brackets with hook and lingual sheath no hook</p>
+        <div class="rating-price">
+          <div class="price">₪10</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Kobayashi shorty ties.png" alt="Kobayashi shorty ties"/>
+        <h4>Kobayashi shorty ties</h4>
+        <p>KB-03S</p>
+        <div class="rating-price">
+          <div class="price">₪80</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- <div class="product-card">
+        <img src="images/Sterilized 23G blunt tip.png" alt="Sterilized 23G blunt tip"/>
+        <h4>Sterilized 23G blunt tip</h4>
+        <p>Single use disposable 18G PDO</p>
+        <div class="rating-price">
+          <div class="price">₪0</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div> -->
+
+      <div class="product-card">
+        <img src="images/ACE.M.png" alt="ACE.M"/>
+        <h4>ACE.M</h4>
+        <p>Endodontic or dental instrument for root canal treatment.</p>
+        <div class="rating-price">
+          <div class="price">₪0</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Micropex.png" alt="Micropex"/>
+        <h4>Micropex</h4>
+        <p>Instrument used in endodontics for precise canal shaping.</p>
+        <div class="rating-price">
+          <div class="price">₪0</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Black.png" alt="Black"/>
+        <h4>Black</h4>
+        <p>Black-colored dental accessory or material.</p>
+        <div class="rating-price">
+          <div class="price">₪10</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- <div class="product-card">
+        <img src="https://via.placeholder.com/300x200/eee/333?text=Master+black+diamond" alt="Master black diamond"/>
+        <h4>Master black diamond</h4>
+        <p>Diamond bur for high-precision cutting in dental work.</p>
+        <div class="rating-price">
+          <div class="price">₪0</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div> -->
+
+
+      <div class="product-card">
+        <img src="images/Dental sensor.png" alt="Dental sensor"/>
+        <h4>Dental sensor</h4>
+        <p>Sensor for digital dental imaging.</p>
+        <div class="rating-price">
+          <div class="price">₪4500</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Cushion .png" alt="Cushion"/>
+        <h4>Dental Unit</h4>
+        <p>Cushion color: U010: green</p>
+        <div class="rating-price">
+          <div class="price">₪15000</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<!-- ---------- section2 ---------- -->
+    <h3 id="section-2" class="active">Dental Labs</h3>
+<div class="products-grid">
+
+  <div class="product-card">
+  <img src="images/Ceramics block.png" alt="Ceramics block"/>
+  <h4>Ceramics block</h4>
+  <p>Ceramics block - Kingch Zirconia blocks (multiple entries).</p>
+  <div class="rating-price">
+    <div class="price">₪300</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/PMMA monolayer.png" alt="PMMA monolayer"/>
+  <h4>PMMA monolayer</h4>
+  <p>PMMA monolayer - Pmma blocks.</p>
+  <div class="rating-price">
+    <div class="price">₪80</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+
+
+<div class="product-card">
+  <img src="images/50,000 RPM micromotor.png" alt="Micromotor 50,000 RPM"/>
+  <h4>Micromotor 50,000 RPM</h4>
+  <p>50,000 RPM micromotor for fast and precise trimming and polishing.</p>
+  <div class="rating-price">
+    <div class="price">₪1000</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/30,000 RPM micromotor.png" alt="Micromotor 30,000 RPM"/>
+  <h4>Micromotor 30,000 RPM</h4>
+  <p>30,000 RPM micromotor for routine lab finishing tasks.</p>
+  <div class="rating-price">
+    <div class="price">₪450</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Stain kit (paste).png" alt="Stain kit (paste)"/>
+  <h4>Stain kit (paste)</h4>
+  <p>Coloring paste for characterizing and shading ceramic restorations.</p>
+  <div class="rating-price">
+    <div class="price">₪2000</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Porcelain kit (powder).png" alt="Porcelain kit (powder)"/>
+  <h4>Porcelain kit (powder)</h4>
+  <p>Porcelain powder set for building natural-looking ceramic restorations.</p>
+  <div class="rating-price">
+    <div class="price">₪1800</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+
+
+<div class="product-card">
+  <img src="images/HST-N7-01 (training block for students).png" alt="HST-N7-01 (training block for students)"/>
+  <h4>HST-N7-01 (training block for students)</h4>
+  <p> HST-N7-01 (training block for students) - Practice block used for student training in dental restoration procedures.</p>
+  <div class="rating-price">
+    <div class="price">₪20</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+<div class="product-card">
+  <img src="images/Tray base.png" alt="Tray base"/>
+  <h4>Tray base</h4>
+  <p>Base tray used for holding and organizing dental impressions.</p>
+  <div class="rating-price">
+    <div class="price">₪30</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Plastic impression tray.png" alt="Plastic impression tray"/>
+  <h4>Plastic impression tray</h4>
+  <p>L, M, S (blue) — 300L / 300M / 300S for accurate impression taking.</p>
+  <div class="rating-price">
+    <div class="price">₪3</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Work pans metal clip.png" alt="Work pans metal clip"/>
+  <h4>Work pans metal clip</h4>
+  <p>Work pans with secure metal clips for organizing lab cases.</p>
+  <div class="rating-price">
+    <div class="price">₪10</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Membrane box yellow clip.png" alt="Membrane box yellow clip"/>
+  <h4>Membrane box yellow clip</h4>
+  <p>Protective box for storing and transporting dental membranes.</p>
+  <div class="rating-price">
+    <div class="price">₪3</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/16 hole veneer box.png" alt="16 hole veneer box"/>
+  <h4>16 hole veneer box</h4>
+  <p>Compact box for storing up to 16 veneer units safely.</p>
+  <div class="rating-price">
+    <div class="price">₪15</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Denture box with sponge - L, S.png" alt="Denture box with sponge - L, S"/>
+  <h4>Denture box with sponge - L, S</h4>
+  <p>Storage box with protective sponge insert for dentures.</p>
+  <div class="rating-price">
+    <div class="price">₪5</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/60 hole bur box.png" alt="60 hole bur box"/>
+  <h4>60 hole bur box</h4>
+  <p>Large-capacity bur organizer with 60 holes.</p>
+  <div class="rating-price">
+    <div class="price">₪50</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/36 hole bur box - A, D.png" alt="36 hole bur box - A, D"/>
+  <h4>36 hole bur box - A, D</h4>
+  <p>Compact bur box models A and D for easy bur storage.</p>
+  <div class="rating-price">
+    <div class="price">₪35</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/60 hole bur box B022 .png" alt="60 hole bur box B022"/>
+  <h4>60 hole bur box B022</h4>
+  <p>Premium 60-hole bur box, ideal for lab organization.</p>
+  <div class="rating-price">
+    <div class="price">₪60</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Firing tray.png" alt="Firing tray - 1#, 4#"/>
+  <h4>Firing tray - 1#, 4#</h4>
+  <p>Ceramic firing tray for dental porcelain firing processes.</p>
+  <div class="rating-price">
+    <div class="price">₪50</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/New flask - upper, lower.png" alt="New flask - upper, lower"/>
+  <h4>New flask - upper, lower</h4>
+  <p>Upper and lower flasks used for denture processing.</p>
+  <div class="rating-price">
+    <div class="price">₪150</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Black articulator.png" alt="Black articulator"/>
+  <h4>Black articulator</h4>
+  <p>Full articulator for precise model alignment and occlusion.</p>
+  <div class="rating-price">
+    <div class="price">₪350</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Zink articulator - L, M.png" alt="Zink articulator - L, M"/>
+  <h4>Zink articulator - L, M</h4>
+  <p>Zinc alloy articulator available in multiple sizes (L, M).</p>
+  <div class="rating-price">
+    <div class="price">₪20</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Black plastic articulator.png" alt="Black plastic articulator"/>
+  <h4>Black plastic articulator</h4>
+  <p>Lightweight articulator for model alignment and occlusion checking.</p>
+  <div class="rating-price">
+    <div class="price">₪0</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Photo light DP-016.png" alt="Photo light DP-016"/>
+  <h4>Photo light DP-016</h4>
+  <p>High-intensity photo light for dental photography.</p>
+  <div class="rating-price">
+    <div class="price">₪250</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/JG-218 sandblaster.png" alt="JG-218 sandblaster"/>
+  <h4>JG-218 sandblaster</h4>
+  <p>Precision sandblaster for cleaning and surface preparation.</p>
+  <div class="rating-price">
+    <div class="price">₪1300</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Model trimmer JG-209.png" alt="Model trimmer JG-209"/>
+  <h4>Model trimmer JG-209</h4>
+  <p>Model trimmer for precise finishing of dental models.</p>
+  <div class="rating-price">
+    <div class="price">₪1800</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Steamer.png" alt="Steamer"/>
+  <h4>Steamer</h4>
+  <p>Steam cleaner for removing wax and polishing residues.</p>
+  <div class="rating-price">
+    <div class="price">₪2500</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Metal pins.png" alt="Metal pins"/>
+  <h4>Metal pins</h4>
+  <p>Metal retention pins for securing dental models.</p>
+  <div class="rating-price">
+    <div class="price">₪25</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Ceramic pins.png" alt="Ceramic pins"/>
+  <h4>Ceramic pins</h4>
+  <p>Ceramic retention pins for high-temperature firing applications.</p>
+  <div class="rating-price">
+    <div class="price">₪25</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Ceramics sculpturing instrument 2.png" alt="Ceramics sculpturing instrument 2#"/>
+  <h4>Ceramics sculpturing instrument 2#</h4>
+  <p>Fine sculpting tool for shaping ceramic restorations.</p>
+  <div class="rating-price">
+    <div class="price">₪30</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/RF-009 4 polish wheels.png" alt="RF-009 4 polish wheels"/>
+  <h4>RF-009 4 polish wheels</h4>
+  <p>Set of 4 polishing wheels for finishing and smoothing restorations.</p>
+  <div class="rating-price">
+    <div class="price">₪100</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Red wax 250g.png" alt="Red wax 250g"/>
+  <h4>Red wax 250g</h4>
+  <p>Soft modeling wax for sculpting dental prosthetics.</p>
+  <div class="rating-price">
+    <div class="price">₪20</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+
+<div class="product-card">
+  <img src="images/light cure acrylic sheets.png" alt="light cure acrylic sheets"/>
+  <h4>light cure acrylic sheets</h4>
+  <p>Wax used during denture processing and adjustments.</p>
+  <div class="rating-price">
+    <div class="price">₪350</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Washable model resin gray.png" alt="Washable model resin gray"/>
+  <h4>Washable model resin gray</h4>
+  <p>High-precision washable resin for 3D printed dental models.</p>
+  <div class="rating-price">
+    <div class="price">₪200</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Temp C&B resin A2.png" alt="Temp C&B resin A2"/>
+  <h4>Temp C&B resin A2</h4>
+  <p>Resin for temporary crowns and bridges with natural shade A2.</p>
+  <div class="rating-price">
+    <div class="price">₪550</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Permanent crown resin.png" alt="Permanent crown resin"/>
+  <h4>Permanent crown resin</h4>
+  <p>Durable resin material for permanent dental restorations.</p>
+  <div class="rating-price">
+    <div class="price">₪1200</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Planting model resin.png" alt="Planting model resin"/>
+  <h4>Planting model resin</h4>
+  <p>Specialized resin for implant and surgical guide modeling.</p>
+  <div class="rating-price">
+    <div class="price">₪220</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/ELEGOO Saturn 4 ultra 12K.png" alt="ELEGOO Saturn 4 ultra 12K"/>
+  <h4>ELEGOO Saturn 4 ultra 12K</h4>
+  <p>High-resolution 3D printer for detailed dental model production.</p>
+  <div class="rating-price">
+    <div class="price">₪0</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="images/Dual function (zirconia and metal argon furnace).png" alt="Dual function (zirconia and metal argon furnace)"/>
+  <h4>Dual function (zirconia and metal argon furnace)</h4>
+  <p>Advanced furnace supporting both zirconia sintering and metal casting under argon.</p>
+  <div class="rating-price">
+    <div class="price">₪30000</div>
+    <div class="quantity-selector">
+      <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+      <input type="number" class="quantity-input" value="1" min="1"/>
+      <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- ---------- section3 ---------- -->
+    <h3 id="section-3" class="active">Medical Supplies</h3>
+  <div class="products-grid">
+  <div class="product-card">
+    <img src="images/Sterilization pouch.png" alt="Sterilization pouch"/>
+    <h4>Sterilization pouch</h4>
+    <p>Sterilization pouch - 90×260mm for safe instrument packaging and autoclaving.</p>
+    <div class="rating-price">
+      <div class="price">₪0</div>
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/Sterilization pouchMetal .png" alt="Sterilization pouch (metal handle, snap, bowl)"/>
+    <h4>Sterilization pouch (metal types)</h4>
+    <p>Sterilization pouch — metal handle, snap type, and bowl type options for different sterilization workflows.</p>
+    <div class="rating-price">
+      <div class="price">₪0</div>
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/Barrier film .png" alt="Barrier film"/>
+    <h4>Barrier film</h4>
+    <p>Barrier film — 4×6 inch, 4s, without base and box; protects surfaces and equipment during procedures.</p>
+    <div class="rating-price">
+      <div class="price">₪0</div>
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+
+
+
+  <div class="product-card">
+    <img src="images/Alcohol lamp.png" alt="Alcohol lamp"/>
+    <h4>Alcohol lamp</h4>
+    <p>Alcohol lamp — stable flame heat source for lab sterilization and quick burn-off tasks.</p>
+    <div class="rating-price">
+      <div class="price">₪0</div>
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/Press type cotton roll box.png" alt="Press type cotton roll box"/>
+    <h4>Press type cotton roll box</h4>
+    <p>Press-type cotton roll dispenser — keeps rolls clean, dry, and easy to dispense during procedures.</p>
+    <div class="rating-price">
+      <div class="price">₪0</div>
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="images/Intra Owner Scanner.png" alt="Intra Owner Scanner"/>
+    <h4>Intra Owner Scanner</h4>
+    <p>Digital intraoral scanner for fast, accurate 3D impressions and streamlined digital workflows.</p>
+    <div class="rating-price">
+      <div class="price">₪0</div>
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------- section4 ---------- -->
+    <!-- <h3 id="section-4" class="active">Medical devices</h3>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200/eee/333?text=Product+10" alt="Teeth Whitening Kit"/>
+        <h4>Teeth Whitening Kit</h4>
+        <p>Complete kit for safe and fast teeth whitening.</p>
+        <div class="rating-price">
+          <div class="price">₪75</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200/eee/333?text=Product+11" alt="Dental Density Meter"/>
+        <h4>Dental Density Meter</h4>
+        <p>Precision tool for measuring teeth and bone density.</p>
+        <div class="rating-price">
+          <div class="price">₪120</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200/eee/333?text=Product+12" alt="Gum Examination Device"/>
+        <h4>Gum Examination Device</h4>
+        <p>Accurate device for easy gum health monitoring.</p>
+        <div class="rating-price">
+          <div class="price">₪90</div>
+          <div class="quantity-selector">
+            <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+            <input type="number" class="quantity-input" value="1" min="1"/>
+            <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------- section5 ---------- -->
+    <h3 id="section-5" class="active">Dental Devices</h3>
+<div class="products-grid">
+
+  <!-- BD-2016 (portable dental unit) -->
+  <div class="product-card">
+    <img src="images/BD-2016 (portable dental unit).png" alt="BD-2016 portable dental unit"/>
+    <h4>BD-2016 (Portable Dental Unit)</h4>
+    <p>Compact, mobile dental unit equipped with air compressor, suction, and instrument tray for field or home dental care.</p>
+    <div class="rating-price">
+      <div class="price">₪0</div>
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- 1.8m workbench -->
+  <div class="product-card">
+    <img src="images/1.8m Workbench.png" alt="1.8m workbench"/>
+    <h4>1.8m Workbench</h4>
+    <p>Heavy-duty 1.8-meter laboratory workbench with drawers and power outlets for dental lab operations.</p>
+    <div class="rating-price">
+      <div class="price">₪0</div>
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Master black diamond -->
+  <!-- <div class="product-card">
+    <img src="images/Master black diamond.png" alt="Master black diamond"/>
+    <h4>Master Black Diamond</h4>
+    <p>Premium high-torque dental micromotor system featuring precision control and ergonomic design.</p>
+    <div class="rating-price">
+      <div class="price">₪0</div>
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div> -->
+
+  <!-- X-ray machine -->
+  <div class="product-card">
+    <img src="images/x-ray machine dental.png" alt="X-ray machine"/>
+    <h4>X-Ray Machine</h4>
+    <p>High-resolution dental X-ray unit with adjustable exposure and digital imaging compatibility for diagnostic precision.</p>
+    <div class="rating-price">
+      <div class="price">₪0</div>
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Three-tier trolley with bracket -->
+  <div class="product-card">
+    <img src="images/Three-Tier Trolley with Bracket.png" alt="Three-tier trolley with bracket"/>
+    <h4>Three-Tier Trolley with power supply</h4>
+    <p>Multi-level mobile trolley with side bracket for convenient storage and equipment transport in dental clinics.</p>
+    <div class="rating-price">
+      <div class="price">₪0</div>
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Diode laser titanium machine -->
+  <!-- <div class="product-card">
+    <img src="images/Diode laser titanium machine.png" alt="Diode laser titanium machine"/>
+    <h4>Diode Laser Titanium Machine</h4>
+    <p>Advanced diode laser unit with titanium body for soft tissue procedures, whitening, and surgical applications.</p>
+    <div class="rating-price">
+      <div class="price">₪0</div>
+      <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+        <input type="number" class="quantity-input" value="1" min="1"/>
+        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div> -->
+
+
+
+
+
+</div>
+  </section>
+  <br>
+  <br>
+  <br>
+
+  <section id="about">
+    <div class="container about-content">
+      <!-- <img src="https://via.placeholder.com/400x300/eee/333?text=Company+Image" alt="Company Team Image"/> -->
+      <div>
+        <h2>About Us</h2>
+        <p><b>At Medi Dent</b>, we specialize in providing high-quality medical and dental supplies to clinics, medical centers, and laboratories. Our goal is to support healthcare professionals by offering reliable products that meet daily clinical needs with efficiency and safety.
+          We believe that quality in the medical field is not an option — it is a necessity. That’s why we carefully select our products from trusted suppliers to ensure durability, compliance, and consistent performance.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- أيقونة التواصل المنبثقة -->
+<!-- أيقونة التواصل (تظهر فقط عند قسم المنتجات) -->
+<div id="contact-fab" class="contact-fab" aria-label="Contact">
+  <div class="fab-icon">
+    <i class="fa-brands fa-whatsapp" style="font-size:28px;"></i>
+  </div>
+
+  <!-- قائمة صغيرة -->
+  <div class="contact-popup">
+    <a href="tel:0599980107" class="contact-link"> Phone:059‑998‑0107</a>
+    <button class="contact-link contact-wa"
+            data-phone="972599980107"
+            data-msg="مرحبا، أود الاستفسار عن المنتجات.">
+      WhatsApp:+972 59‑998‑0107
+    </button>
+  </div>
+</div>
+
+<!-- ماسك تغبيش خفيف أثناء محاولة فتح الواتساب -->
+<div id="wa-launch-mask" class="launch-mask" style="display:none;"></div>
+
+
+
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 | Your Company Name. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- تغبيش الخلفية + نافذة السلة -->
+<div id="cart-overlay" class="cart-overlay" style="display:none;"></div>
+<div id="cart-popup" class="cart-popup" style="display:none;">
+  <h3>🛒 سلتك</h3>
+  <div id="cart-items"></div>
+  <div id="cart-total" style="text-align:right; font-weight:700; margin:10px 0 15px;"></div>
+  <!-- الأزرار تُنشأ وتُربط من السكربت تلقائيًا (اطلب الآن / تفريغ السلة) -->
+</div>
+
+  <!-- <button id="order-now" class="order-now">اطلب الآن</button> -->
+</div>
+</body>
+</html>
